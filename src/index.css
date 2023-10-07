@@ -1,0 +1,25 @@
+:root {
+  /* ### Primary */
+
+  --Linear-gradient-active-inputborder: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --Red--input-errors: hsl(0, 100%, 66%);
+  --gradient: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%))
+    1;
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-grayishviolet: hsl(270, 3%, 87%);
+  --Dark-grayishviolet: hsl(279, 6%, 55%);
+  --Very-darkviolet: hsl(278, 68%, 11%);
+}
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
