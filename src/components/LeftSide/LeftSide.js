@@ -7,8 +7,12 @@ function LeftSide() {
   return (
     <div className="leftside col-md-4">
       <picture>
-        <source media="(max-width:768px)" srcSet={bgMob} />
-        <img src={bgDesk} alt="/" />
+        <img src={bgMob} alt="/" className="d-block d-md-none col-12  bg-mob" />
+        <img
+          src={bgDesk}
+          alt="/"
+          className="d-none d-md-block col-12 bg-desk"
+        />
       </picture>
     </div>
   );

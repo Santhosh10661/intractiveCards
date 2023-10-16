@@ -36,6 +36,8 @@ function RightSide(props) {
       }
       if (!cvc.trim()) {
         inputError.cvc = "Can't be blank";
+      } else if (cvc.length !== 3) {
+        inputError.cvc = "3 digit required";
       } else if (!isValiNumber(cvc)) {
         inputError.cvc = "Worng format,numbers only";
       }
@@ -52,9 +54,9 @@ function RightSide(props) {
     }
   }
   return (
-    <div className="rightside col-md-8 ">
-      <form className="d-flex">
-        <label>
+    <div className="rightside col-md-8 mt-5">
+      <form className="d-block col-md-7 col-lg-6 ">
+        <label className="col-12">
           <span>cardholder name</span>
           <br />
           <input
@@ -70,7 +72,7 @@ function RightSide(props) {
             <p className="error">{errors.cardHolderName}</p>
           )}
         </label>
-        <label>
+        <label className="col-12">
           <span> card number</span>
           <br />
           <input

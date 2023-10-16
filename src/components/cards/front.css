@@ -1,0 +1,63 @@
+.frontSide {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+
+.fd-Con {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 0%;
+  height: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--White);
+  overflow: hidden;
+}
+.cardLogo {
+  height: 30%;
+}
+.cardLogo svg {
+  height: 100%;
+}
+.chDetails {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6em;
+}
+.cNo {
+  flex-shrink: 0;
+  letter-spacing: 0.1em;
+}
+.cNo p {
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .frontSide {
+    position: relative;
+  }
+}
+@media (min-width: 992px) {
+  .cNo p {
+    font-size: 1.1rem;
+  }
+  .chDetails {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 1200px) {
+  .cNo p {
+    font-size: 1.4rem;
+  }
+  .chDetails {
+    font-size: 1em;
+  }
+}
+
+.expdate {
+  display: flex;
+}
+
+.lspace {
+  letter-spacing: 0.1em;
+}

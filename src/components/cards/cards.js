@@ -14,9 +14,11 @@ function Cards(props) {
   };
   let backForm = { cvc };
   return (
-    <div className="Cards col-md-5">
-      <FrontSide frontForm={frontForm} />
-      <BackSide backForm={backForm} />
+    <div className="Cards col-12 col-md-5 col-lg-5 offset-md-1">
+      <div className="cardCon col-12 col-md-11 position-relative">
+        <FrontSide frontForm={frontForm} />
+        <BackSide backForm={backForm} />
+      </div>
     </div>
   );
 }
